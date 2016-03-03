@@ -1,27 +1,25 @@
 #include <stdio.h>
-#include <locale.h>
 
 int main (void)
 {
 	float a;
 	
-	setlocale(LC_ALL,"Russian");
-	printf("\n\nВведите время в формате _._ :  ");
+	printf("\n\nVvedite vrema v formate _._ :  ");
 	scanf("%f", &a);
 	if ((a >= 5.00)&&(a <= 11.30)) {
-		printf("\n\n\t\tДоброе утро!\n\n");
+		printf("\n\n\t\tDobroe utro!\n\n");
 	} else {
 		if ((a > 11.30)&&(a <= 17.30)){
-			printf("\n\n\t\tДобрый день!\n\n");
+			printf("\n\n\t\tDobruy den!\n\n");
 		} else {
 			if ((a > 17.30)&&(a <= 21.00)){
-				printf("\n\n\t\tДобрый вечер!\n\n");
+				printf("\n\n\t\tDobruy vesher!\n\n");
 			} else {
 				if ((a > 21.00)&&(a <= 23.59)){
-					printf("\n\n\t\tСпокойной ночи!\n\n");
+					printf("\n\n\t\tSpokoynoy noshi!\n\n");
 				} else {
 					if ((a > 00.00)&&(a <= 5.0)){
-						printf("\n\n\t\tУже ночь!\n\n");
+						printf("\n\n\t\tUge nosh!\n\n");
 					} else {
 						
 					}
