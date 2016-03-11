@@ -7,13 +7,17 @@ int main ()
 	printf("\n\nVvedite vozrast: ");
 	scanf("%d", &a);
 	os = a%10;
-	if (os == 1) {
-		printf("\nVam %d god.", a);
+	if ((a > 10)&&(a < 21)) {
+		printf("\nVam %d let.", a);
 	} else {
-		if ((os > 1)&&(os < 5)) {
+		if (os == 1) {
+			printf("\nVam %d god.", a);
+		} else {
+			if ((os > 1)&&(os < 5)) {
 			printf ("\nVam %d goda.", a);
 		} else {
 			printf("\nVam %d let.", a);
+			}
 		}
 	}
 	
