@@ -2,24 +2,24 @@
 
 int main ()
 {
-	int a, os;
+	int year, x, x2, x3;
 	
-	printf("\n\nVvedite vozrast: ");
-	scanf("%d", &a);
-	os = a%10;
-	if ((a > 10)&&(a < 21)) {
-		printf("\nVam %d let.", a);
+	printf("\nVvedite god: ");
+	scanf("%d", &year);
+	
+	x = year%4;
+	x2 = year%100;
+	x3 = year%400;
+	
+	if ((x2 == 0)&&(x3 != 0)) {
+		printf("\nV etom godu 365 dney.\n");
 	} else {
-		if (os == 1) {
-			printf("\nVam %d god.", a);
+		if (x == 0) {
+			printf("\nV etom godu 366 dney.\n");
 		} else {
-			if ((os > 1)&&(os < 5)) {
-			printf ("\nVam %d goda.", a);
-		} else {
-			printf("\nVam %d let.", a);
-		}
+			printf("\nV etom godu 365 dney.\n");
 		}
 	}
 	
-	return 0;	
+	return 0;
 }
